@@ -1,0 +1,93 @@
+* {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 4rem;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    }
+
+.content {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; Ensures content wraps if necessary */
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.time-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 70px; /* Ensures a minimum width for each unit */
+}
+
+.label {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.days, .hours, .minutes, .seconds {
+    font-size: 2.5rem;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 650px) {
+    h1 {
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    .label, .days, .hours, .minutes, .seconds {
+        white-space: nowrap;
+        font-size: 2rem;
+    }
+    .content {
+        gap: 20px; /* Reduce gap between items on smaller screens */
+    }
+}
+
+@media (max-width: 950px) {
+    h1 {
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    .label, .days, .hours, .minutes, .seconds {
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+    .content {
+        gap: 20px; /* Reduce gap between items on smaller screens */
+    }
+}
+@media (max-width: 465px) {
+    h1 {
+        font-size: 20px;
+    }
+    .label, .days, .hours, .minutes, .seconds {
+        font-size: 1.7rem;
+        white-space: nowrap;
+    }
+    .content {
+        gap: 8px;
+    }}
+    
